@@ -4,6 +4,12 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    transition: all 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
 }
 
 header {
@@ -41,6 +47,24 @@ nav a.active {
     background-color: #666;
 }
 
+.dark-mode-toggle {
+    margin: 10px 0;
+}
+
+#darkModeToggle {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#darkModeToggle:hover {
+    background-color: #666;
+}
+
 .mod-container {
     padding: 20px;
     text-align: center;
@@ -71,6 +95,12 @@ nav a.active {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.2s;
+}
+
+body.dark-mode .mod-card {
+    color: #fff;
+    background-color: #444;
+    border-color: #fff;
 }
 
 .mod-card:hover {
@@ -104,10 +134,18 @@ nav a.active {
     color: #666;
 }
 
+body.dark-mode .mod-info p {
+    color: #ccc;
+}
+
 .mod-card.large .mod-info h3 {
     font-size: 22px;
 }
 
 .mod-card.large .mod-info p {
     font-size: 16px;
+}
+
+body.dark-mode .mod-card.large .mod-info p {
+    color: #ddd;
 }
