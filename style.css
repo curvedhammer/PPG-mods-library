@@ -13,6 +13,34 @@ header {
     padding: 20px;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav a.active {
+    background-color: #666;
+}
+
 .mod-container {
     padding: 20px;
     text-align: center;
@@ -29,6 +57,10 @@ header {
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.mod-grid.large-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .mod-card {
@@ -51,6 +83,11 @@ header {
     display: block;
 }
 
+.mod-card.large img {
+    width: 100%;
+    height: auto;
+}
+
 .mod-info {
     padding: 10px;
     text-align: center;
@@ -65,4 +102,12 @@ header {
     margin: 5px 0 0;
     font-size: 14px;
     color: #666;
+}
+
+.mod-card.large .mod-info h3 {
+    font-size: 22px;
+}
+
+.mod-card.large .mod-info p {
+    font-size: 16px;
 }
