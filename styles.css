@@ -54,7 +54,7 @@ nav a.active {
 
 #darkModeToggle {
     padding: 10px 20px;
-    background-color: #444;
+    background-color: #2a2a2a;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -63,7 +63,7 @@ nav a.active {
 }
 
 #darkModeToggle:hover {
-    background-color: #666;
+    background-color: #444;
 }
 
 .search-bar {
@@ -83,9 +83,9 @@ nav a.active {
 }
 
 body.dark-mode #searchInput {
-    background-color: #444;
+    background-color: #2a2a2a;
     color: #fff;
-    border-color: #666;
+    border-color: #444;
 }
 
 .mod-container {
@@ -144,8 +144,8 @@ body.dark-mode #searchInput {
 
 body.dark-mode .mod-card {
     color: #fff;
-    background-color: #444;
-    border-color: #fff;
+    background-color: #2a2a2a;
+    border-color: #555;
 }
 
 .mod-card:hover {
@@ -180,7 +180,7 @@ body.dark-mode .mod-card {
 }
 
 body.dark-mode .mod-info p {
-    color: #ccc;
+    color: #bbb;
 }
 
 .mod-card.large .mod-info h3 {
@@ -192,7 +192,7 @@ body.dark-mode .mod-info p {
 }
 
 body.dark-mode .mod-card.large .mod-info p {
-    color: #ddd;
+    color: #ccc;
 }
 
 .mod-card.large {
