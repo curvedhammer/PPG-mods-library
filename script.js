@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
+    const searchInput = document.getElementById('searchInput');
 
-    // Check for saved user preference or default to light mode
+    // dark mode logic
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
     if (isDarkMode) {
         body.classList.add('dark-mode');
@@ -13,4 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const darkModeEnabled = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', darkModeEnabled);
     });
+
+    // search logic
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            const modCards = document.querySelectorAll('.mod-card');
+
+            modCards.forEach(card => {
+                const modTitle = card.querySelector('.mod-info h3').textContent.toLowerCase();
+                if (modTitle.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    }
 });

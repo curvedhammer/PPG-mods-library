@@ -17,6 +17,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
+    position: relative;
 }
 
 header h1 {
@@ -63,6 +64,28 @@ nav a.active {
 
 #darkModeToggle:hover {
     background-color: #666;
+}
+
+.search-bar {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    width: 200px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body.dark-mode #searchInput {
+    background-color: #444;
+    color: #fff;
+    border-color: #666;
 }
 
 .mod-container {
