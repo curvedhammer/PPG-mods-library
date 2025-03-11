@@ -119,14 +119,15 @@ body.dark-mode #searchInput {
 
 .mod-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .mod-grid.large-cards {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
 }
 
 .mod-card {
@@ -137,6 +138,8 @@ body.dark-mode #searchInput {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.2s;
+    max-width: 250px;
+    width: 100%;
 }
 
 body.dark-mode .mod-card {
@@ -190,4 +193,8 @@ body.dark-mode .mod-info p {
 
 body.dark-mode .mod-card.large .mod-info p {
     color: #ddd;
+}
+
+.mod-card.large {
+    max-width: 300px;
 }
