@@ -198,3 +198,36 @@ body.dark-mode .mod-card.large .mod-info p {
 .mod-card.large {
     max-width: 300px;
 }
+
+.github-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.github-icon:hover {
+    background-color: #555;
+}
+
+.github-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+body.dark-mode .github-icon {
+    background-color: #444;
+}
+
+body.dark-mode .github-icon:hover {
+    background-color: #666;
+}
